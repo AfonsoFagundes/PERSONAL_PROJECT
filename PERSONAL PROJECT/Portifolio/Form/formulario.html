@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <link rel="stylesheet" href="Style/formulario.css">
+</head>
+<body>
+  <section id="formulario">
+    <h2>Get in touch</h2>
+    <form id="formulario-contato" action="formulario" novalidate>
+      <input type="text" name="name" id="name" placeholder="Name" required>
+      <input type="email" name="email" id="email" placeholder="E-mail" required>
+      <textarea name="message" id="message" placeholder="Type" required></textarea>
+      <button type="submit">Send</button>
+      <div id="loading" class="loading">Sending...</div>
+      <p id="message-success" class="success-message"></p>
+      <p id="message-error" class="error"></p>
+      
+    </form>
+  </section>
+
+  <a href="/Portifolio/index.html" class="botao">Get back</a>
+
+  <!-- CORRETO! Adicione o script JS aqui -->
+  <script src="Form/funcao.js" defer></script>
+</body>
+</html>
